@@ -1,0 +1,240 @@
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ /* Style the header */
+ .header {
+   grid-area: header;
+   background-color:#11172C;
+   color: white;
+   padding: 30px;
+   font-size: 20px;
+ }
+ 
+ /* The grid container */
+ .grid-container {
+   display: grid;
+   grid-template-areas: 
+     'header header header header header header' 
+     'left left middle middle right right' 
+     'footer footer footer footer footer footer';
+   /* grid-column-gap: 10px; - if you want gap between the columns */
+ } 
+ 
+ .left,
+ .middle,
+ .right {
+   padding: 10px;
+ }
+ 
+ /* Style the left column */
+ .left {
+   grid-area: left;
+   width: 200px;
+ }
+ 
+ /* Style the middle column */
+ .middle {
+   grid-area: middle;
+}
+
+.middle ul {
+   list-style-type: none;
+}
+
+.middle ul li{
+   border: 2px solid #11172C;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   margin: 20px 0px;
+   padding: 5px 20px;
+}
+
+.middle iframe{
+   display:block;
+   margin: auto;
+   margin-bottom: 20px;
+}
+
+/* Style the right column */
+ .right {
+   grid-area: right;
+   width: 200px;
+}
+ 
+ /* Style the footer */
+ .footer {
+   grid-area: footer;
+   background-color:#11172C;
+   color: white;
+   padding: 10px;
+   text-align: center;
+ }
+ 
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+ @media (max-width: 600px) {
+   .header {
+     font-size: 12px;
+      }
+   .grid-container  {
+     grid-template-areas: 
+       'header header header header header header' 
+       'left left left left left left' 
+       'middle middle middle middle middle middle' 
+       'right right right right right right' 
+       'footer footer footer footer footer footer';
+   }
+   .middle ul{
+      margin: 0px 0px;
+      padding: 0px 0px;
+   }
+}
+ 
+ 
+ body{
+   font-family:Georgia, Times, serif;
+}
+/* Pagination links */
+.pagination{
+   margin: 20px;
+}
+
+.pagination a {
+   color: black;
+   padding: 8px 16px;
+   text-decoration: none;
+   border-radius: 5px;
+  transition: background-color .3s;
+ }
+ 
+ /* Style the active/current link */
+ .pagination a.active {
+   background-color:#11172C;
+   color: white;
+ }
+ 
+ /* Add a grey background color on mouse-over */
+ .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* h2{
+   font-family:Georgia, Times, serif;
+   font-style:italic;
+}
+
+strong{
+   color: #782F2B;
+}
+
+
+
+#playground{
+   display:flex;
+	flex-wrap: wrap;
+   padding: 0px;
+}
+
+#manualPlayer{
+   width: 40%;	
+   margin: 2%;
+   text-align: center;
+}
+#machinePlayer{
+   width: 40%;	
+   margin: 2%;
+   text-align: center;
+}
+
+#machinePlayer select{
+   visibility: hidden;
+}
+
+.player img{
+   height: 100px;
+
+}
+.introInfo{
+   padding: 10px;
+}
+.introInfo .label{
+   font-style: italic;
+   vertical-align: top;
+}
+
+.introInfo button{
+   margin-right: 20px;
+   padding: 3px;
+}
+
+.matchSummary{
+    float:none;
+	font-weight:bold;
+	list-style: none;
+
+}
+.marker li{
+	display: inline; 
+}
+	
+.marker{
+	width:100%;
+	text-align: center;
+}
+
+.teamMarker{
+    float:left;
+	width:150px;
+	text-align: center;
+}
+
+.teamMarker p{
+	font-size:200%;
+	font-weight:bold;
+}
+
+.tableSummary{
+	margin-top:250px;
+}
+
+p{
+   font-family:Verdana,Arial, serif;
+}
+
+table {
+   font-size: 80%;
+   width: 580px;
+   text-align:center;
+   border-spacing: 0px;
+   border-collapse: collapse;
+   }
+
+th, td {
+   padding: 7px 10px 10px 10px;
+   border: 1px solid #782F2B;
+   }
+
+th {
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   font-size: 90%;
+   background-color: #FF7B5C;
+   color:#782F2B;
+   text-align: center;
+}
+
+.tableSummary th:nth-child(1) {
+  width: 50px;
+  }
+
+.tableSummary th:nth-child(2) {
+  width: 500px;
+}
+
+tr:hover {
+   background-color: #E5C8FF;} */
